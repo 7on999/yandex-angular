@@ -51,9 +51,10 @@
   <div class="weather-and-trafic__trafic">
     <div class="weather-and-trafic__item-titles">
       <span class="weather-and-trafic__item-title_main">Пробки</span>
-      <span class="weather-and-trafic__item-title">Метро</span>
-      <span class='weather-and-trafic__item-title'>Расписание</span>
-      <span class='weather-and-trafic__item-title'>Такси</span>
+      <span class="weather-and-trafic__item-title" *ngFor="let section of sections">
+         {{section}}
+      </span>
+
       <img class='weather-and-trafic__weather-and-trafic-img weather-and-trafic__trafic-img'
         src='../../assets/icons/dots-vertical.png' />
     </div>

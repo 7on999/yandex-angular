@@ -5,15 +5,21 @@
       <div class="main-block__top-content">
         <div class="main-block__news">
           <div class="main-block__news-titles">
-            <span> Cейчас в СМИ </span>
-            <span> В Москве </span>
-            <span> Интересное </span>
-            <span> Коронавирус </span>
+            
+            <span *ngFor="let newsTitle of newsTitleArr"> {{newsTitle}} </span>
+
             <img class='weather-and-trafic__weather-and-trafic-img main-block__top-img'
               src='../../assets/icons/dots-vertical.png' />
           </div>
           <div class='main-block__news'>
             <ul>
+
+
+              <!-- <li *ngFor='news of newsArr'>
+                <div class='main-block__news-picture main-block__news-picture_first'></div>
+                <span class="main-block__news-item">{{news}}</span>
+              </li> -->
+
               <li>
                 <div class='main-block__news-picture main-block__news-picture_first'></div>
                 <span class="main-block__news-item"> Путин ударил кулаком по столу во время доклада главы Минтруда о зарплатах шахтеров </span>

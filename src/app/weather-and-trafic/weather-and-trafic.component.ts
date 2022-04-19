@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeatherAndTraficComponent implements OnInit {
 
+  sections = [ 'Метро', 'Расписание', 'Такси' ]
   constructor() { }
 
   ngOnInit(): void {
